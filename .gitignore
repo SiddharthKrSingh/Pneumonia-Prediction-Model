@@ -1,5 +1,5 @@
 pne/
-artifacts/
+artifacts/data_ingestion
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
