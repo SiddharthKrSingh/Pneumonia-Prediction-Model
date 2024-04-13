@@ -23,8 +23,10 @@ class PredictionPipeline:
         print(result)
 
         if result[0] == 1:
-            prediction = 'pneumonia'
-            return [{ "image" : prediction}]
+            prediction = 'PNEUMONIA'
+            return [{ "explanation": ''"निमोनिया, फेफड़ों की छोटी वायु थैली और उनके आस-पास के ऊतकों का संक्रमण होता है.यह दुनिया भर में मृत्यु की सबसे आम वजहों में से एक है.निमोनिया के कुछ खास प्रकारों को इम्यूनाइज़ेशन से रोका जा सकता है""",
+                      "RESULT" : prediction,
+                     }]
         else:
             prediction = 'Normal'
-            return [{ "image" : prediction}]
+            return [{ "result" : prediction}]
